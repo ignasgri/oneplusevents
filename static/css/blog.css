@@ -1,0 +1,204 @@
+h5{
+    color: white;
+}
+.image{
+     text-align: center;
+  }
+body{
+  background-image: url(http://www.healthline.com/hlcmsresource/images/News/general-health/071916_unitsmoking_BODY.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  color:black;
+}
+form{
+    padding: 20px;
+}
+hr{
+    width: 90%!important;
+}
+#monster{
+    opacity: 0.8;
+}
+#disqus_thread{
+    padding: 0px 20px 0px 20px!important;
+}
+
+.panel-body{
+    margin-bottom: 15px;
+    padding: 30px;
+    padding: 30px;
+}
+.panel {
+    border-color: transparent;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    margin: auto;
+}
+.blog-panel {
+    border-color: transparent;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+.extra-panel{
+    background-color: transparent;
+}
+.btn-default {
+    text-shadow: 0 1px 0 gray;
+    color: gray;
+    border-color: #ccc;
+    /* color: red; */
+    background: #f9c64d;
+    padding: 10px!important;
+}
+}
+.btn-default:hover {
+    text-shadow: 0 1px 0 gray;
+    color: gray;
+    border-color: #ccc;
+    /* color: red; */
+    background: #f9c64d;
+}
+.navbar{
+    margin-top: 20px;
+    width: 100%;
+    /*margin-right: 50px;*/
+}
+.navbar-brand {
+    float: left;
+    padding: 11px 15px;
+    padding-right: 0;
+    font-size: 17px;
+    line-height: 18px;
+    height: 40px;
+}
+h1{
+    text-align: center;
+}
+.navbar-brand>img{
+    display: block;
+    margin-top: -12px;
+}
+footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background-color: #ededed; */
+    text-align: center;
+}
+
+h1, h1 a {
+    color: white;
+    text-decoration: none;
+}
+ 
+#masthead {
+    padding-left:10px;
+    padding-bottom: 30px;
+    min-height: 50px;
+    margin: auto;
+}
+}
+ 
+#masthead h1 {
+    font-size: 55px;
+    line-height: 1;
+    margin: auto;
+}
+ 
+#masthead .well{
+    margin-top: 31px;
+    min-height: 127px;
+}
+ 
+.navbar.affix {
+    /*position: fixed;
+    top: 0;
+    width: 100%;*/
+}
+ 
+#logo {
+    color: #12AB82;
+}
+ 
+.story-img {
+    margin-top: 25px;
+    display: block;
+}
+ 
+a, a:hover {
+    color: black;
+    text-decoration: none;
+}
+ 
+.icon-bar {
+    background-color: black;
+}
+ 
+.dropdown-menu {
+    min-width: 250px;
+}
+.thumbnail {
+    margin-bottom: 8px;
+}
+ 
+.img-container {
+    overflow: hidden;
+    height: 170px;
+}
+ 
+.img-container img {
+    min-width: 280px;
+    min-height: 180px;
+    max-width: 380px;
+    max-height: 280px;
+}
+ 
+.txt-container {
+    overflow: hidden;
+    height: 100px;
+}
+ 
+.panel .lead {
+    overflow: hidden;
+    height: 90px;
+}
+ 
+.label-float {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: .9;
+    padding: 6px;
+    color: #fff;
+}
+.blog-posts{
+    padding-bottom: 20px;
+}
+.new{
+    text-shadow: 0 1px 0 grey;
+    color: #f9c64d;
+    border-color: #ccc;
+    /* color: red; */
+    background: gray;
+}
+
+@media screen and (min-width: 768px) {
+    #masthead h1 {
+        font-size: 80px;
+        margin: auto;
+}
+img.blogimages{
+    border-radius:15px;
+    margin: 0px!important;
+}
+}
+@media screen and (max-width: 768px) {
+p{
+        margin: 30px;
+}
+}

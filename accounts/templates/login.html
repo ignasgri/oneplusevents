@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% block content %}
+<div class="blog-panel extra-panel">
+<div class="panel">
+    <form role="form" method="post" action="{% url 'login' %}?next={{ next }}">
+        <legend>Login</legend>
+        {% csrf_token %}
+        {{ form | as_bootstrap }}
+        <p><a href="{% url 'password_reset' %}"><img src="http://www.uh.edu/facilities-services/news-events/stories/2015/12/key.png" alt="img" height="50px">Forgot my password?</p>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+</div>
+</div>
+{% endblock %}

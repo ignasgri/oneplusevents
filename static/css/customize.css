@@ -1,0 +1,36 @@
+.imagesize{
+    margin-bottom: 20px !important;
+    width:100%;
+    padding: 25px;
+}
+.blogimages{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px;
+    max-height: 250px;
+    max-width: 90%;
+}
+img.blogimages{
+    border-radius:15px;
+    margin: auto;
+    display: block;
+}
+.profileimage{
+    margin-top:40px;
+    width: 150px; 
+    height: 150px; 
+    background-color: #12ABB2; 
+    color: #ffffff;
+    border-radius:50%
+}
+#layout, .btn-default, .dropdown-menu .divider, .follow-btn, .post-content .post-body {
+    overflow: hidden;
+}
+.post-title{
+    font-size: 30px;
+    padding: 20px;
+}
+.tags{
+    margin-left: 30px;
+}

@@ -1,0 +1,1 @@
+c:\Users\ignas\virtualenvs\blog_env\Scripts\activate
