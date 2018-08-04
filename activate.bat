@@ -1,1 +1,1 @@
-c:\Users\ignas\virtualenvs\blog_env\Scripts\activate
+c:\Users\ignas\virtualenvs\oneplusevents_env\Scripts\activate
