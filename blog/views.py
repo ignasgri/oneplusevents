@@ -3,7 +3,10 @@ from django.utils import timezone
 from .models import Post
 from .forms import BlogPostForm
  
- 
+
+def home (request):
+    return render(request, 'home.html')
+
 def post_list(request):
     """
     Create a view that will return a

@@ -1,1 +1,1 @@
-web: gunicorn blog_prj.wsgi:application
+web: gunicorn oneplusevents.wsgi:application
