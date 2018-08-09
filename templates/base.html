@@ -13,7 +13,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Logo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,24 +21,37 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">OnePlusEvents <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Our Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">What we do</a>
+    </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+    </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Contacts</a>
+    </li>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
+                <span><img src="{% gravatar_url user.email %}" style="width:25px; height: 25px; background-color: #12ABB2; color: #ffffff;"
+                    class="img-circle"></span> Account <span class="caret"></span></a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+                {% if user.is_authenticated %}
+          <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
+          <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
+          {% else %}
+          <a class="dropdown-item" href="{% url 'login' %}">Login</a>
+          <a class="dropdown-item" href="{% url 'register' %}">Register</a>
+          {% endif %}
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -50,64 +63,7 @@
 
 
 
-    <nav class="navbar">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/"><img id="monster" src="http://i65.tinypic.com/24oal5c.png" alt="img" height="50px"></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="{% url 'index' %}"><h5>#1 Tech News Site In The World </h5><span class="sr-only">(current)</span></a></li>
-        <li><a href="/"></a></li>
-        
-         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><class="glyphicon glyphicon-comment" aria-hidden="true"><span><h5> More Tech News<span class="caret"></span></h5></span></a>
-          <ul class="dropdown-menu">
-              
-            <li><a href="#"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Phones</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Laptops</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Tablets</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Smart TV</a></li>
-         <li><a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Virtual Reality</a></li>
-          </ul>
-        </li>
-      </ul>
-
-     <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="for display purposes only">
-        </div>
-        <button type="submit" class="btn btn-default">Search</button>
-      </form>
-         <ul class="nav navbar-nav navbar-right">
-      <a class="navbar-brand" href="https://github.com/ignasgri"><img src="https://image.ibb.co/eWm1oQ/fork.png" alt="img" height="45px"></a>
-        
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                    aria-expanded="false"><span><img src="{% gravatar_url user.email %}" style="width:25px; height: 25px; background-color: #12ABB2; color: #ffffff;"
-                    class="img-circle"></span> Account <spanclass="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        {% if user.is_authenticated %}
-                            <li><a href="{% url 'profile' %}">Profile</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="{% url 'logout' %}">Log Out</a></li>
-                        {% else %}
-                            <li><a href="{% url 'login' %}">Log In</a></li>
-                            <li><a href="{% url 'register' %}">Register</a></li>
-                        {% endif %}
-        </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-
+   
 
 <div class="container">
     <div class="row">
