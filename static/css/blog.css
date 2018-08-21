@@ -4,13 +4,13 @@ h5{
 .image{
      text-align: center;
   }
-body{
+/* body{
   background-image: url(http://www.healthline.com/hlcmsresource/images/News/general-health/071916_unitsmoking_BODY.jpg);
   background-size:cover;
   background-position:center center;
   background-attachment:fixed;
   color:black;
-}
+} */
 form{
     padding: 20px;
 }
