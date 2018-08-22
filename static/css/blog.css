@@ -1,3 +1,7 @@
+html{
+    font-family: Raleway,sans-serif;
+    font-size: 12px;
+}
 h5{
     color: white;
 }
@@ -65,14 +69,17 @@ hr{
     margin-top: 20px;
     width: 100%;
     /*margin-right: 50px;*/
+    position: absolute;
+    z-index: 10;
 }
 .navbar-brand {
-    float: left;
-    padding: 11px 15px;
-    padding-right: 0;
-    font-size: 17px;
-    line-height: 18px;
-    height: 40px;
+    /* float: left; */
+    /* padding: 11px 15px; */
+    /* padding-right: 0; */
+    font-size: 12px;
+    /* line-height: 18px; */
+    /* height: 40px; */
+    font-family: Raleway,sans-serif;
 }
 h1{
     text-align: center;
