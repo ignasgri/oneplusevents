@@ -23,14 +23,14 @@ body, html{
 }
 
 .pimg1{
-  background-image:url('../images/back.jpg');
+  background-image:url('../images/background1.jpg');
   background-color: #f9e988;
   min-height:100%;
   width: 100%;
   position:relative;
   opacity:0.70;
-  /* background-position:center;
-  background-size:cover; */
+  background-position:center;
+  background-size:cover;
   background-repeat:no-repeat;
 
   /*
@@ -87,6 +87,44 @@ body, html{
   background-color:transparent;
 }
 
+.titleText{
+  position:absolute;
+  top:30%;
+  left: 15%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  max-width: 500px;
+  border: 1px solid #77cba2!important;
+  
+}
+.titleBorder{
+  color:#fff;
+  padding:20px;
+  background-color:transparent;
+
+}
+.titleColor{
+  color: #77cba2;
+  font-weight: 500;
+}
+.titlePar{
+  text-align:center;
+  font-size: 12px;
+  color: #2c3137;
+  padding: 20px;
+  letter-spacing:2px;
+}
+.titleButton{
+  margin: 20px;
+  font-size: 12px;
+  background: transparent;
+  border: 1px solid #2c3137;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
 @media(max-width:568px){
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
