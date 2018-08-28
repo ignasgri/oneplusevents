@@ -3,7 +3,9 @@ html{
     font-size: 12px;
 }
 h5{
-    color: white;
+    color: #77cba2;
+    font-family: Raleway,sans-serif;
+    letter-spacing: 2px;
 }
 .image{
      text-align: center;
@@ -74,7 +76,7 @@ hr{
 }
 .navbar-brand {
     /* float: left; */
-    /* padding: 11px 15px; */
+    padding: 11px 15px;
     /* padding-right: 0; */
     font-size: 12px;
     /* line-height: 18px; */
