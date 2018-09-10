@@ -42,10 +42,7 @@
     border-radius: 5px;
   }
   .titleText{
-    position:absolute;
-    top:15%;
-    left: 15%;
-    width:80%;
+    position: relative;
     text-align:center;
     color:#000;
     font-size:27px;
@@ -54,6 +51,9 @@
     border: 1px solid #77cba2!important;
     max-height: 800px;
     padding: 20px;
+    top: 30%;
+    margin: auto;
+    left: 50px;
     
   }
   .titleBorder{
@@ -106,23 +106,83 @@
   .projectmouseover{
     max-width:100%;
   }
-  @media(max-width:1100px){
-    .image_container {
-        max-width: 100%;
-        text-align: center;
-      }
-      .projectmouseover{
-        max-height:350px;
-      }
-      .prj_image{
-        opacity:0.7;
-        transition: .5s ease;
-        max-width: 49%!important;
-        max-height: 100%;
+
+  .prj_image_container {
+    position: relative;
+    width: 24.5%;
+    padding-left: 4px;
+    padding-left: 4px;
   }
+  .prj_image_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(105, 186, 0);
+  }
+  .prj_image_container:hover .prj_image_overlay {
+    opacity: 0.5;
+  }
+  .prj_image_text {
+    color: white;
+    font-size: 1em;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .prj_image1{
+    opacity:0.7;
+    transition: .5s ease;
+    /* max-width: 24.5%; */
+    /* height: 170px; */
+}
+.prj_image1:hover{
+    opacity:1;
+    transition: .5s ease;
+}
+@media screen and (max-width:768px){
+    .prj_image_container {
+        width: 49%!important;
+        text-align: center;
+        padding-bottom: 4px;
+      
+}}
+  @media (max-width: 3000px) and (min-width: 769px){
+.image_container {
+    max-width: 100%;
+    text-align: center;
+}
+.prj_image_container {
+    padding-bottom: 4px;
+}
+/* .projectmouseover{
+    max-height:350px;
+} */
+.prj_image{
+    opacity:0.7;
+    transition: .5s ease;
+    max-width: 49%!important;
+    max-height: 100%;
+  }
+  .prj_image1{
+    opacity:0.7;
+    transition: .5s ease;
+    /* max-width: 49%!important; */
+    max-height: 100%;
+}
 .partners_logos{
   text-align: center;
   width: 100%; 
   display: inline-block!important;
 }
   }
+

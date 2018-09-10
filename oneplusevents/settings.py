@@ -87,19 +87,19 @@ WSGI_APPLICATION = 'oneplusevents.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-# DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
+DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
-# DATABASE_URL = os.environ.get('DATABASE_URL')
+DATABASE_URL = os.environ.get('DATABASE_URL')
 # DATABASE_URL = 'postgres://dzbmpemarbnftb:2049a6e14b0d78c25e7f0892dd1970f1707c9cc6adc1aa130010c710e29e7606@ec2-54-217-212-8.eu-west-1.compute.amazonaws.com:5432/dbcrj3eks40gh0'
-# DATABASES = {'default': dj_database_url.parse(DATABASE_URL)}
-# DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
+DATABASES = {'default': dj_database_url.parse(DATABASE_URL)}
+DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 
 
 # Password validation
@@ -156,6 +156,7 @@ SITE_ID = 1
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+#PROCUTION SETTINGS
 DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 
 AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires

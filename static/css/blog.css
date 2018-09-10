@@ -1,12 +1,8 @@
-html{
-    font-family: Raleway,sans-serif;
+body, html{
+    font-family: Raleway,sans-serif!important;
     font-size: 12px;
 }
-h5{
-    color: #77cba2;
-    font-family: Raleway,sans-serif;
-    letter-spacing: 2px;
-}
+
 .image{
      text-align: center;
   }

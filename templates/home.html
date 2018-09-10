@@ -5,19 +5,29 @@
 {% block content %}
 
 <div class="pimg1">
-        <div class="titleText">
-          <span class="titleBorder">
-            <span class="titleColor">LETS START TODAY!</span>
-            <p class="titlePar">Offices in North Dublin to service international clientele
-                    Established a singular model within the global destination management industry
-                    Extensive experience with Fortune 500 corporations and emerging boutique companies
-                    Preferred status with a selected collection of conference hotels
-                    Referral-based business represents commitment to client objectives and budgets
-                    Systemized operational procedures for pre-production and production phases
-                    Socially committed mission that embraces an environmental and cross-cultural perspective</p>
-            <button class="title_button" type="button">Find out more...</button>
-          </span>
-        </div>
+    <div class="container">
+            <div class="row">
+                    <div class="col-sm-6">
+                            <div class="titleText">
+                                    <span class="titleBorder">
+                                      <span class="titleColor">LETS START TODAY!</span>
+                                      <p class="titlePar">Offices in North Dublin to service international clientele
+                                              Established a singular model within the global destination management industry
+                                              Extensive experience with Fortune 500 corporations and emerging boutique companies
+                                              Preferred status with a selected collection of conference hotels
+                                              Referral-based business represents commitment to client objectives and budgets
+                                              Systemized operational procedures for pre-production and production phases
+                                              Socially committed mission that embraces an environmental and cross-cultural perspective</p>
+                                      <button class="title_button" type="button">Find out more...</button>
+                                    </span>
+                                  </div>
+                               </div>
+                    <div class="col-sm-6">
+                         
+                    </div>
+                    </div>
+     
+    </div>
       </div>
     
       <section class="section section-light">
@@ -117,19 +127,58 @@
                     </p>
                 </div>
         <!-- <div class="container"> -->
-                <div class="row" style=" width:100%; display:inline-block; margin:0; padding-bottom:4px;">
+            
+                <div class="container row" style=" margin:0;width:100%; padding:0;">
                   <!-- <div style="margin: 4px;" class=""> -->
-                        <img class="prj_image" src="{% static "images/prj4.jpg" %}"  alt="My image">
-                        
+                      <div class=" prj_image_container">
+                        <img class=" projectmouseover" src="{% static "images/prj4.jpg" %}"  alt="My image">
+                        <div class="prj_image_overlay">
+                                <div class="prj_image_text" style="bottom:0">
+                                    <p>Sugar Loaf Photograpgy Experience</p>
+                                    <!-- <p>FOUNDER & CEO</p> -->
+                                    <!-- <p>Nunc interdum, ligula in tincidunt porta, lacus tortor ornare ante, ut euismod urna purus eu nisi, quis aliquet mauris malesuada vel.</p> -->
+                                    </div>
+                              </div>
+                  <!-- </div> --></div>
+                  <div class="prj_image_container">
+                        <img class=" projectmouseover" src="{% static "images/prj12.jpg" %}"  alt="My image">
+                        <div class="prj_image_overlay">
+                                <div class="prj_image_text" style="bottom:0">
+                                    <p>Sugar Loaf Photograpgy Experience</p>
+                                    <!-- <p>FOUNDER & CEO</p> -->
+                                    <!-- <p>Nunc interdum, ligula in tincidunt porta, lacus tortor ornare ante, ut euismod urna purus eu nisi, quis aliquet mauris malesuada vel.</p> -->
+                                    </div>
+                              </div>
+                  <!-- </div> --></div>
+                  <div class="prj_image_container">
+                        <img class=" projectmouseover" src="{% static "images/prj3.jpg" %}"  alt="My image">
+                        <div class="prj_image_overlay">
+                                <div class="prj_image_text" style="bottom:0">
+                                    <p>Sugar Loaf Photograpgy Experience</p>
+                                    <!-- <p>FOUNDER & CEO</p> -->
+                                    <!-- <p>Nunc interdum, ligula in tincidunt porta, lacus tortor ornare ante, ut euismod urna purus eu nisi, quis aliquet mauris malesuada vel.</p> -->
+                                    </div>
+                              </div>
+                  <!-- </div> --></div>
+                  <div class="prj_image_container">
+                        <img class=" projectmouseover" src="{% static "images/prj5.jpg" %}"  alt="My image">
+                        <div class="prj_image_overlay">
+                                <div class="prj_image_text" style="bottom:0">
+                                    <p>Sugar Loaf Photograpgy Experience</p>
+                                    <!-- <p>FOUNDER & CEO</p> -->
+                                    <!-- <p>Nunc interdum, ligula in tincidunt porta, lacus tortor ornare ante, ut euismod urna purus eu nisi, quis aliquet mauris malesuada vel.</p> -->
+                                    </div>
+                              </div>
+                  <!-- </div> --></div>
+                
+                  <!-- <div class="" style="margin: 4px"> -->
+                        <!-- <img class="prj_image"src="{% static "images/prj12.jpg" %}" alt="My image"> -->
                   <!-- </div> -->
                   <!-- <div class="" style="margin: 4px"> -->
-                        <img class="prj_image"src="{% static "images/prj12.jpg" %}" alt="My image">
-                  <!-- </div> -->
-                  <!-- <div class="" style="margin: 4px"> -->
-                        <img class="prj_image" src="{% static "images/prj3.jpg" %}" alt="My image">
+                        <!-- <img class="prj_image" src="{% static "images/prj3.jpg" %}" alt="My image"> -->
                       <!-- </div> -->
                       <!-- <div class="" style="margin: 4px"> -->
-                            <img class="prj_image" src="{% static "images/prj5.jpg" %}" alt="My image">
+                            <!-- <img class="prj_image" src="{% static "images/prj5.jpg" %}" alt="My image"> -->
                           <!-- </div> -->
                           <!-- <div class="" style="margin: 4px"> -->
                                 <!-- <img src="{% static "images/prj5.jpg" %}" width="16.4%" height="150px" alt="My image"> -->
@@ -138,29 +187,52 @@
                                 <!-- <img src="{% static "images/prj6.jpg" %}" width="16.4%" height="150px" alt="My image"> -->
                               <!-- </div> -->
                 </div>
-                <div class="row" style="opacity:0.70; width:100%; display:inline-block; margin:0;">
-                  <!-- <div class="col"> -->
-                        <img class="prj_image" src="{% static "images/prj7.jpg" %}" alt="My image">
-                  <!-- </div> -->
-                  <!-- <div class="col"> -->
-                        <img class="prj_image" src="{% static "images/prj11.jpg" %}" alt="My image">
-                  <!-- </div> -->
-                  <!-- <div class="col"> -->
-                        <img class="prj_image" src="{% static "images/prj6.jpg" %}" alt="My image">
-                  <!-- </div> -->
-                  <!-- <div class="col"> -->
-                        <img class="prj_image" src="{% static "images/prj10.jpg" %}" alt="My image">
-                      <!-- </div> -->
-                      <!-- <div class="col"> -->
-                            <!-- <img src="{% static "images/prj11.jpg" %}" width="16.4%" height="150px"  alt="My image"> -->
-                      <!-- </div> -->
-                      <!-- <div class="col"> -->
-                            <!-- <img src="{% static "images/prj12.jpg" %}" width="16.4%" height="150px"  alt="My image"> -->
-                          <!-- </div> -->
+                <div class="row" style="margin:0;width:100%; padding:0;">
+                        <div class=" prj_image_container">
+                                <img class=" projectmouseover" src="{% static "images/prj7.jpg" %}"  alt="My image">
+                                <div class="prj_image_overlay">
+                                        <div class="prj_image_text" style="bottom:0">
+                                            <p>Sugar Loaf Photograpgy Experience</p>
+                                            <!-- <p>FOUNDER & CEO</p> -->
+                                            <!-- <p>Nunc interdum, ligula in tincidunt porta, lacus tortor ornare ante, ut euismod urna purus eu nisi, quis aliquet mauris malesuada vel.</p> -->
+                                            </div>
+                                      </div>
+                          <!-- </div> --></div>
+                          <div class="prj_image_container">
+                                <img class=" projectmouseover" src="{% static "images/prj6.jpg" %}"  alt="My image">
+                                <div class="prj_image_overlay">
+                                        <div class="prj_image_text" style="bottom:0">
+                                            <p>Sugar Loaf Photograpgy Experience</p>
+                                            <!-- <p>FOUNDER & CEO</p> -->
+                                            <!-- <p>Nunc interdum, ligula in tincidunt porta, lacus tortor ornare ante, ut euismod urna purus eu nisi, quis aliquet mauris malesuada vel.</p> -->
+                                            </div>
+                                      </div>
+                          <!-- </div> --></div>
+                          <div class="prj_image_container">
+                                <img class=" projectmouseover" src="{% static "images/prj11.jpg" %}"  alt="My image">
+                                <div class="prj_image_overlay">
+                                        <div class="prj_image_text" style="bottom:0">
+                                            <p>Sugar Loaf Photograpgy Experience</p>
+                                            <!-- <p>FOUNDER & CEO</p> -->
+                                            <!-- <p>Nunc interdum, ligula in tincidunt porta, lacus tortor ornare ante, ut euismod urna purus eu nisi, quis aliquet mauris malesuada vel.</p> -->
+                                            </div>
+                                      </div>
+                          <!-- </div> --></div>
+                          <div class="prj_image_container">
+                                <img class=" projectmouseover" src="{% static "images/prj10.jpg" %}"  alt="My image">
+                                <div class="prj_image_overlay">
+                                        <div class="prj_image_text" style="bottom:0">
+                                            <p>Sugar Loaf Photograpgy Experience</p>
+                                            <!-- <p>FOUNDER & CEO</p> -->
+                                            <!-- <p>Nunc interdum, ligula in tincidunt porta, lacus tortor ornare ante, ut euismod urna purus eu nisi, quis aliquet mauris malesuada vel.</p> -->
+                                            </div>
+                                      </div>
+                          <!-- </div> --></div>
                 </div>
                 <div class="container text-center">
                 <button type="button" class="title_button">MORE</button>
-                </div></div>
+                </div>
+            </div>
                 
             </div>
                 <!-- <div class="row" style="height: 100px;">
